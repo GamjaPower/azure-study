@@ -9,3 +9,7 @@
 https://docs.microsoft.com/ko-kr/azure/architecture/aws-professional/services
 - 과금정책 
 - Azure에서 Terraform으로 인스턴스 생성 
+- Key 생성 terraform output -raw tls_private_key > id_rsa
+- ssh 접속 ssh -i id_rsa azureuser@x.x.x.x 
+
+
