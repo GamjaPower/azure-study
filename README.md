@@ -16,3 +16,7 @@ https://docs.microsoft.com/ko-kr/azure/architecture/aws-professional/services
 - ansible ping : ansible -i ansible.hosts all  -m ping --private-key  ./id_rsa
 - ansible create file : ansible-playbook -i ansible.hosts  --private-key ./id_rsa playbook.yml
 - Terraform 할당된 자원들 모두 삭제 : terraform destroy
+
+## 확장  
+- Azure에서 Terraform으로 VM 1개를 생성하고 Ansible로 파일 하나를 생성한다. 
+- 확장하면 Azure에서 다수의 VM을 생성하고 Ansible로 Splunk Cluster를 설치할 수 있다. 
