@@ -13,7 +13,7 @@ https://docs.microsoft.com/ko-kr/azure/architecture/aws-professional/services
 - IP 확인 : terraform output public_ip_address
 - ssh 접속 ssh -i id_rsa azureuser@x.x.x.x 
 - 
-- ansible hosts 생성 : VM_IP=`terraform output public_ip_address`; echo $VM_IP "ansible_ssh_user=azureuser" > ansible.hosts
+- ansible hosts 생성 : VM_IP=&#96;terraform output public_ip_address&#96;; echo $VM_IP "ansible_ssh_user=azureuser" > ansible.hosts
 - ansible ping : ansible -i ansible.hosts all  -m ping --private-key  ./id_rsa
 - ansible create file : ansible-playbook -i ansible.hosts  --private-key ./id_rsa playbook.yml
 - Terraform 할당된 자원들 모두 삭제 : terraform destroy
