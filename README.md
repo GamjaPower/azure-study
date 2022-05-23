@@ -12,5 +12,7 @@ https://docs.microsoft.com/ko-kr/azure/architecture/aws-professional/services
 - Key 생성 : terraform output -raw tls_private_key > id_rsa
 - IP 확인 : terraform output public_ip_address
 - ssh 접속 ssh -i id_rsa azureuser@x.x.x.x 
+- upload key : ssh-copy-id azureuser@x.x.x.x
+- ansible :..
 - Terraform 할당된 자원들 모두 삭제 : terraform destroy
 
